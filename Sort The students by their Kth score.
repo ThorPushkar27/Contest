@@ -21,3 +21,27 @@ public:
         return ans;
     }
 };
+
+
+
+// Mera Soocha hua solution kissi aur ne imlement kiya.
+//Learnt hOW TO assign member to a static variable.
+//Learnt how to write a comparator function.
+// Usecase of static function.
+
+int x;
+class Solution {
+public:
+    
+    static bool sortcol(vector<int>&v1,vector<int>&v2){
+        if(v1[x]>v2[x]) return true;
+        else return false;
+    }
+    vector<vector<int>> sortTheStudents(vector<vector<int>>& score, int k) {
+        x=k;
+        sort(score.begin(),score.end(),sortcol);
+        return score;
+        
+    }
+};
+
